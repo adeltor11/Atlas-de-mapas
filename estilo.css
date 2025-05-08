@@ -1,0 +1,23 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+h1 {
+    margin-top: 20px;
+}
+#selectorMapa {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+#visor {
+    margin: auto;
+    max-width: 90%;
+}
+#mapa {
+    width: 100%;
+    max-width: 900px;
+    border: 1px solid #333;
+}

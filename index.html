@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Visor de Mapas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Visor de Mapas</h1>
+    <select id="selectorMapa" onchange="mostrarMapa()">
+        <option value="" disabled selected>Seleccione un mapa</option>
+        <option value="img/Alajuela_Areas_Silvestres_Protegidas.png">Alajuela_Areas Silvestres Protegidas</option>
+<option value="img/Alajuela_Biodiversidad.png">Alajuela_Biodiversidad</option>
+<option value="img/Alajuela_Carreteras.png">Alajuela_Carreteras</option>
+<option value="img/Alajuela_Territorios_Indigenas.png">Alajuela_Territorios Indigenas</option>
+<option value="img/Cartago_Areas_Silvestres_Protegidas.png">Cartago_Areas Silvestres Protegidas</option>
+<option value="img/Cartago_Biodiversidad.png">Cartago_Biodiversidad</option>
+<option value="img/Cartago_Carreteras.png">Cartago_Carreteras</option>
+<option value="img/Cartago_Territorios_Indigenas.png">Cartago_Territorios Indigenas</option>
+<option value="img/Guanacaste_Areas_Silvestres_Protegidas.png">Guanacaste_Areas Silvestres Protegidas</option>
+<option value="img/Guanacaste_Biodiversidad.png">Guanacaste_Biodiversidad</option>
+<option value="img/Guanacaste_Carreteras.png">Guanacaste_Carreteras</option>
+<option value="img/Guanacaste_Territorios_Indigenas.png">Guanacaste_Territorios Indigenas</option>
+<option value="img/Heredia_Areas_Silvestres_Protegidas.png">Heredia_Areas Silvestres Protegidas</option>
+<option value="img/Heredia_Biodiversidad.png">Heredia_Biodiversidad</option>
+<option value="img/Heredia_Carreteras.png">Heredia_Carreteras</option>
+<option value="img/Heredia_Territorios_Indigenas.png">Heredia_Territorios Indigenas</option>
+<option value="img/Limón_Areas_Silvestres_Protegidas.png">Limón_Areas Silvestres Protegidas</option>
+<option value="img/Limón_Biodiversidad.png">Limón_Biodiversidad</option>
+<option value="img/Limón_Carreteras.png">Limón_Carreteras</option>
+<option value="img/Limón_Territorios_Indigenas.png">Limón_Territorios Indigenas</option>
+<option value="img/Puntarenas_Areas_Silvestres_Protegidas.png">Puntarenas_Areas Silvestres Protegidas</option>
+<option value="img/Puntarenas_Biodiversidad.png">Puntarenas_Biodiversidad</option>
+<option value="img/Puntarenas_Carreteras.png">Puntarenas_Carreteras</option>
+<option value="img/Puntarenas_Territorios_Indigenas.png">Puntarenas_Territorios Indigenas</option>
+<option value="img/San_José_Areas_Silvestres_Protegidas.png">San José_Areas Silvestres Protegidas</option>
+<option value="img/San_José_Biodiversidad.png">San José_Biodiversidad</option>
+<option value="img/San_José_Carreteras.png">San José_Carreteras</option>
+<option value="img/San_José_Territorios_Indigenas.png">San José_Territorios Indigenas</option>
+    </select>
+    <div id="visor">
+        <img id="mapa" src="" alt="Mapa seleccionado">
+    </div>
+    <script>
+        function mostrarMapa() {
+            const valor = document.getElementById('selectorMapa').value;
+            document.getElementById('mapa').src = valor;
+        }
+    </script>
+</body>
+</html>
